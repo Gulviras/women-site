@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Radiant 40+ Protocol | Nutritional Guide for Women</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 3rem 0;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .warning-box strong {
+            color: #856404;
+        }
+
+        /* Pillar Sections */
+        .pillar {
+            background: linear-gradient(to right, #f8f9fa, #ffffff);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+
+        .pillar h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .supplement-card {
+            background: white;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .supplement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .supplement-card h4 {
+            color: #764ba2;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .supplement-card .tagline {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .supplement-card ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .supplement-card li {
+            margin: 0.5rem 0;
+        }
+
+        .highlight {
+            background: #e7f3ff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-weight: 600;
+            color: #0056b3;
+        }
+
+        /* Image Containers */
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .image-container p {
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        tr:hover {
+            background: #e7f3ff;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Lifestyle Section */
+        .lifestyle-box {
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .lifestyle-box h3 {
+            margin-top: 0;
+        }
+
+        .lifestyle-box ol {
+            margin-left: 1.5rem;
+        }
+
+        .lifestyle-box li {
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            nav li {
+                margin: 0.5rem;
+            }
+
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.75rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            nav, .image-container {
+                display: none;
+            }
+
+            section {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>The Radiant 40+ Protocol</h1>
+            <p class="subtitle">A Specialist's Guide to Supplements for Hair, Skin, Nails & Hormonal Balance</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">By Clinical Nutritionist | Last Updated: May 2026</p>
+        </div>
+    </header>
+
+    <img src="hero-image.jpg" alt="Healthy woman over 40 with glowing skin" class="hero-image">
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#hormones">Hormones</a></li>
+                <li><a href="#skin">Skin</a></li>
+                <li><a href="#hair">Hair</a></li>
+                <li><a href="#nails">Nails</a></li>
+                <li><a href="#stack">Daily Stack</a></li>
+                <li><a href="#lifestyle">Lifestyle</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section id="introduction">
+            <h2>Introduction: Why Your Body Needs Different Fuel After 40</h2>
+            
+            <div class="image-container">
+                <img src="supplements-overview.jpg" alt="Essential supplements for women over 40">
+                <p>Key supplements for optimal health after 40</p>
+            </div>
+
+            <div class="intro">
+                <p>Turning 40 is not just a birthday; it is a <strong>biological pivot point</strong>. For most women, this decade marks the beginning of <strong>perimenopause</strong>. During this transition, estrogen levels begin to fluctuate and eventually decline. Estrogen is not just a reproductive hormone; it is a master regulator of collagen production, hair growth cycles, bone density, and mood stability.</p>
+            </div>
+
+            <p>When estrogen drops, three things happen simultaneously:</p>
+            <ul style="margin: 1rem 0 1rem 2rem; line-height: 2;">
+                <li><strong>Collagen synthesis slows down</strong> (leading to skin thinning and wrinkles)</li>
+                <li><strong>Androgens (testosterone) become relatively dominant</strong> (leading to hair thinning on the scalp but potential hair growth on the face)</li>
+                <li><strong>Insulin sensitivity may decrease</strong> (affecting weight management and energy)</li>
+            </ul>
+
+            <p>This guide curates the essential, evidence-based supplements to support your body through this transition, targeting the <strong>"Big Four": Hair, Skin, Nails, and Hormones.</strong></p>
+
+            <div class="warning-box">
+                <strong>⚠️ Medical Disclaimer:</strong> Always consult with your healthcare provider before starting new supplements, especially if you have a history of hormone-sensitive conditions, are on medication, or have thyroid issues.
+            </div>
+        </section>
+
+        <section id="hormones">
+            <h2>Pillar 1: Hormonal Harmony & Stress Management</h2>
+            <p style="font-style: italic; color: #666; margin-bottom: 2rem;">The Foundation. If your hormones are chaotic, your hair and skin will suffer regardless of topical treatments.</p>
+
+            <div class="image-container">
+                <img src="hormonal-balance.jpg" alt="Hormonal balance infographic for women over 40">
+                <p>Key nutrients for hormonal balance</p>
+            </div>
+
+            <div class="pillar">
+                <h3>1. Magnesium Glycinate</h3>
+                <p><em>The "Master Mineral" for Relaxation and Sleep</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Magnesium deficiency is rampant in women over 40. It is required for over 300 enzymatic processes, including the regulation of cortisol (stress hormone) and the conversion of food into energy. High cortisol steals resources from progesterone production, worsening perimenopausal symptoms.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Improves sleep quality (crucial for cellular repair)</li>
+                        <li>Reduces anxiety</li>
+                        <li>Alleviates muscle tension</li>
+                        <li>Supports bone density</li>
+                    </ul>
+
+                    <h4>💊 Dosage & Tips:</h4>
+                    <p>Choose <span class="highlight">Magnesium Glycinate or Bisglycinate</span>. Avoid Magnesium Oxide (poor absorption, laxative effect). Take <span class="highlight">200–400mg before bed</span>.</p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>2. Vitamin D3 + K2</h3>
+                <p><em>The Hormone Modulator</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Vitamin D is actually a pro-hormone. Receptors for Vitamin D are found in ovarian tissue. Low levels are linked to heavier periods, mood swings, and increased risk of autoimmune issues. K2 ensures calcium goes to your bones, not your arteries.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Supports immune function</li>
+                        <li>Mood stabilization</li>
+                        <li>Bone health</li>
+                        <li>Insulin sensitivity</li>
+                    </ul>
+
+                    <h4>💊 Dosage:</h4>
+                    <p>Aim for blood levels of <span class="highlight">40–60 ng/mL</span>. Typical supplementation is <span class="highlight">2,000–5,000 IU daily</span>, always paired with K2 (MK-7 form).</p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>3. Omega-3 Fatty Acids (High EPA/DHA)</h3>
+                <p><em>The Anti-Inflammatory Fire Extinguisher</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Chronic low-grade inflammation increases with age ("inflammaging"). Omega-3s help combat this, supporting brain health (combating "brain fog") and keeping cell membranes fluid and hydrated.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Reduces joint pain</li>
+                        <li>Supports heart health</li>
+                        <li>Improves skin lipid barrier</li>
+                        <li>May reduce hot flash severity</li>
+                    </ul>
+
+                    <h4>💊 Dosage:</h4>
+                    <p>Look for a high-quality fish oil or algae oil providing at least <span class="highlight">1.5g – 2g of combined EPA/DHA daily</span>.</p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>4. Adaptogens: Ashwagandha or Rhodiola Rosea</h3>
+                <p><em>The Stress Buffers</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Perimenopause is stressful on the adrenal glands. Adaptogens help the body resist stressors.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Ashwagandha: helps balance cortisol and support thyroid function (TSH/T4)</li>
+                        <li>Rhodiola: better for fatigue and mental burnout</li>
+                    </ul>
+
+                    <h4>⚠️ Caution:</h4>
+                    <p>Cycle these supplements (e.g., <span class="highlight">5 days on, 2 days off</span>) to prevent tolerance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skin">
+            <h2>Pillar 2: Skin Elasticity & Hydration</h2>
+            <p style="font-style: italic; color: #666; margin-bottom: 2rem;">Combating the "Estrogen Drop" Effect on Collagen</p>
+
+            <div class="image-container">
+                <img src="anti-aging-supplements.jpg" alt="Anti-aging supplements including collagen and omega-3">
+                <p>Premium anti-aging supplements for skin health</p>
+            </div>
+
+            <div class="pillar">
+                <h3>5. Hydrolyzed Collagen Peptides (Types I & III)</h3>
+                <p><em>The Building Blocks</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Studies show women lose up to <span class="highlight">30% of their skin collagen</span> in the first five years of menopause. Topical creams cannot replace lost structural protein; ingestion can.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Clinically shown to improve skin elasticity</li>
+                        <li>Increases hydration</li>
+                        <li>Improves dermal collagen density</li>
+                        <li>Supports joint health</li>
+                    </ul>
+
+                    <h4>💊 Specialist Tip:</h4>
+                    <p>Look for <span class="highlight">Verisol®</span> or similar patented bioactive peptides. Dosage: <span class="highlight">2.5g – 10g daily</span>. Must be taken consistently for <span class="highlight">8–12 weeks</span> to see results.</p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>6. Hyaluronic Acid (Oral)</h3>
+                <p><em>The Internal Moisturizer</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Estrogen helps skin retain moisture. As it declines, skin becomes dry and crepey. Oral HA has been shown to reach the skin layers and bind water.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Improves skin hydration from within</li>
+                        <li>Reduces eye wrinkles</li>
+                        <li>Supports joint lubrication</li>
+                    </ul>
+
+                    <h4>💊 Dosage:</h4>
+                    <p><span class="highlight">120–240mg daily</span></p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>7. Astaxanthin</h3>
+                <p><em>The Internal Sunscreen</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>This potent carotenoid antioxidant protects skin cells from UV damage and oxidative stress, which accelerate aging.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Improves skin texture</li>
+                        <li>Reduces age spots</li>
+                        <li>Enhances skin elasticity</li>
+                        <li>Gives a subtle, healthy glow without staining skin orange</li>
+                    </ul>
+
+                    <h4>💊 Dosage:</h4>
+                    <p><span class="highlight">4–12mg daily</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hair">
+            <h2>Pillar 3: Hair Thickness & Growth</h2>
+            <p style="font-style: italic; color: #666; margin-bottom: 2rem;">Addressing Thinning and Texture Changes</p>
+
+            <div class="image-container">
+                <img src="hair-supplements.jpg" alt="Hair health supplements with biotin and collagen">
+                <p>Essential supplements for hair health and growth</p>
+            </div>
+
+            <div class="pillar">
+                <h3>8. Biotin (Vitamin B7) + Silica</h3>
+                <p><em>The Keratin Supporters</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>While Biotin deficiency is rare, supplementation can strengthen keratin infrastructure. Silica is essential for collagen formation and hair strength.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Reduces hair brittleness and breakage</li>
+                        <li>Supports nail hardness</li>
+                    </ul>
+
+                    <h4>💊 Specialist Tip:</h4>
+                    <p>Don't overdo Biotin (max <span class="highlight">5,000mcg</span>). High doses can interfere with lab tests (thyroid/troponin). Pair with <span class="highlight">Silica</span> (from Bamboo extract or Orthosilicic Acid) for better structural integrity.</p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>9. Saw Palmetto (Serenoa repens)</h3>
+                <p><em>The DHT Blocker</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>As estrogen drops, relative testosterone rises. Testosterone converts to DHT (Dihydrotestosterone), which shrinks hair follicles on the scalp (female pattern hair loss).</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Mildly inhibits 5-alpha-reductase, the enzyme that creates DHT</li>
+                        <li>Helps maintain hair follicle size</li>
+                    </ul>
+
+                    <h4>⚠️ Caution:</h4>
+                    <p>Consult a doctor if you are on birth control or hormone therapy.</p>
+                </div>
+            </div>
+
+            <div class="pillar">
+                <h3>10. Iron (Ferritin Check Required)</h3>
+                <p><em>The Oxygen Carrier</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Many women in their 40s experience heavy periods due to perimenopausal hormonal fluctuations, leading to iron depletion. Low ferritin (<span class="highlight"><40 ng/mL</span>) is a leading cause of hair shedding.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Ensures hair follicles receive enough oxygen to grow</li>
+                    </ul>
+
+                    <h4>💊 Specialist Tip:</h4>
+                    <p><strong>Do not supplement iron unless you have tested your Ferritin levels.</strong> Excess iron is dangerous. If low, use <span class="highlight">Iron Bisglycinate</span> (gentler on the stomach) with Vitamin C.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nails">
+            <h2>Pillar 4: Nail Strength</h2>
+            <p style="font-style: italic; color: #666; margin-bottom: 2rem;">Often Overlooked, But a Key Health Indicator</p>
+
+            <div class="image-container">
+                <img src="nail-health.jpg" alt="Healthy nails and skincare products">
+                <p>Nail health and beauty supplements</p>
+            </div>
+
+            <div class="pillar">
+                <h3>11. MSM (Methylsulfonylmethane)</h3>
+                <p><em>The Sulfur Donor</em></p>
+                
+                <div class="supplement-card">
+                    <h4>Why it's critical after 40:</h4>
+                    <p>Nails are made of keratin, which is rich in sulfur. MSM provides bioavailable sulfur.</p>
+                    
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Strengthening brittle nails</li>
+                        <li>Reducing splitting/peeling</li>
+                        <li>Supporting joint/connective tissue health</li>
+                    </ul>
+
+                    <h4>💊 Dosage:</h4>
+                    <p><span class="highlight">1–3g daily</span>. Often found in combination with Collagen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack">
+            <h2>The "Best-of" Daily Stack Example</h2>
+            <p>If you were to simplify this into a daily routine, here is how a specialist might structure it for maximum absorption and synergy:</p>
+
+            <div class="image-container">
+                <img src="daily-stack.jpg" alt="Daily supplement stack arrangement">
+                <p>Your complete daily supplement protocol</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time of Day</th>
+                        <th>Supplement</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Morning<br><small>(with Breakfast)</small></strong></td>
+                        <td>
+                            • Vitamin D3 + K2<br>
+                            • Omega-3s<br>
+                            • B-Complex (with Biotin)<br>
+                            • Collagen Peptides
+                        </td>
+                        <td>Fat-soluble vitamins need fat. B-vitamins provide energy. Collagen can be mixed in coffee/smoothie.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lunch</strong></td>
+                        <td>
+                            • Astaxanthin<br>
+                            • Hyaluronic Acid<br>
+                            • Saw Palmetto (if using)
+                        </td>
+                        <td>Antioxidants work well mid-day.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Evening<br><small>(Dinner)</small></strong></td>
+                        <td>
+                            • Magnesium Glycinate<br>
+                            • Zinc (if needed)
+                        </td>
+                        <td>Magnesium promotes relaxation and sleep. Zinc supports immune/hair health (take with food to avoid nausea).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Before Bed</strong></td>
+                        <td>Ashwagandha (optional)</td>
+                        <td>To lower cortisol for deep restorative sleep.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="lifestyle">
+            <h2>Lifestyle Synergies: Supplements Are Not Magic Pills</h2>
+            
+            <div class="lifestyle-box">
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">As a nutritional specialist, I must emphasize that supplements act as <em>insurance</em>, not replacement, for a healthy lifestyle. For women over 40, these three factors are non-negotiable:</p>
+                
+                <ol>
+                    <li>
+                        <strong>Protein Intake:</strong> You need more protein now than you did at 20 to prevent muscle loss (sarcopenia) and provide amino acids for hair/skin. Aim for <span class="highlight">1.2g – 1.6g of protein per kg of body weight</span>.
+                    </li>
+                    <li>
+                        <strong>Strength Training:</strong> Resistance training boosts growth hormone and insulin sensitivity, directly impacting body composition and bone density.
+                    </li>
+                    <li>
+                        <strong>Gut Health:</strong> If your gut is inflamed, you won't absorb these supplements. Include fermented foods (kimchi, kefir, sauerkraut) and fiber daily.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <strong>Q: How long until I see results?</strong>
+                <p><strong>Skin/Hydration:</strong> 4–8 weeks<br>
+                <strong>Hair/Nails:</strong> 3–6 months (hair grows slowly; nails take 6 months to fully replace)<br>
+                <strong>Hormones/Energy:</strong> 2–4 weeks for sleep/mood; 3 months for cycle regulation</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>Q: Can I take all of these?</strong>
+                <p>Start with the foundations: <strong>Magnesium, Vitamin D3/K2, Omega-3s, and Collagen.</strong> Add others based on specific symptoms (e.g., add Saw Palmetto only if hair thinning is evident).</p>
+            </div>
+
+            <div class="faq-item">
+                <strong>Q: What about Phytoestrogens (Soy/Red Clover)?</strong>
+                <p>These can be helpful for hot flashes for some women, but they are controversial for those with a history of estrogen-positive breast cancer. Always discuss with your oncologist or gynecologist before using phytoestrogens.</p>
+            </div>
+        </section>
+
+        <section style="text-align: center; background: linear-gradient(135deg, #667eea15, #764ba215);">
+            <h2 style="border: none; margin-bottom: 1rem;">Ready to Transform Your Health?</h2>
+            <p style="font-size: 1.2rem; color: #555; margin-bottom: 2rem;">
+                Start with one change, track how you feel, and build from there.<br>
+                <strong>Your body is changing, but with the right support, it can thrive.</strong>
+            </p>
+            <div style="margin-top: 2rem; padding: 1rem; background: white; border-radius: 8px; display: inline-block;">
+                <p style="margin: 0; color: #667eea; font-weight: 600;">📅 Last Updated: May 2026</p>
+                <p style="margin: 0.5rem 0 0 0; color: #764ba2;">Clinical Nutritionist Guide</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>The Radiant 40+ Protocol</strong></p>
+            <p>Evidence-Based Nutritional Guidance for Women</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                © 2026 | For educational purposes only. Always consult your healthcare provider.<br>
+                Knowledge cutoff: 2026
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
